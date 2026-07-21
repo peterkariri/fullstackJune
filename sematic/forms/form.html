@@ -1,0 +1,170 @@
+<!-- //form>>this are data collection tools that allow us to collect data to 
+be used in the server side 
+forms use two methods to collect and retrieve data 
+{ METHODS
+    GET>>this method is used to retrieve information from a server {
+        database
+    }
+    POST>>used to send information to the database(req.body)
+}
+forms are essential key tool for interctivty
+we have the form tag that encloses the form elements {
+    these elements are {
+     input 
+    label 
+    submit 
+    }
+    in a form element we can enclose related form/forms with fieldset
+
+    also we can include a textarea component to fill in text(eg with a word
+     limit 
+    300words
+    )
+
+    
+}
+to understand forms we need to use the {
+    label >>this is a unique identifier used to define the input type 
+    the label for is the same as the id atrribute of the input 
+    type that is linked to 
+    it
+
+    input>>refers to the type of data that the user is entering (fullname,email)
+    input has various attributes(characteristics){
+        name>>defines the data type of the inout values(should be the 
+        same name as your 
+        column name in the database)
+        id>> unique identifier of the input
+        value>>this is a prederfined value that is static eg+254........
+        placeholder>>this is aslo a guidance text on how
+         to input values in the input
+
+         each input type should have a label 
+    }
+
+    input types {
+    text>>used to take in text and string dat (names,numbers,passwords)
+    email>>takes in emails (predefined email restriction (@))
+    password>>takes in input password>>hidden
+    date>>takes in date in a calendar
+  number>>takes in a number >>calculator 
+   search>>used for searching elements (ecommerce )
+    }
+} -->
+
+<!-- //25th june 
+ textarea>>this is a custom box used to hld text for pre data entry to be shared in database 
+ we can put a limit to the number of text words that is inout in the text area (limit 250 words){
+ donation /funding platforms }
+ fieldset>>we have a predefined area where we gorup related form content {
+ name,instiutue,donation ,reason }
+
+ //data selection form tags {
+ radio >>we mostly use this for single select data (mae or female )
+ checkbox>>we uset his for multiselect data >>have many hobbies 
+ select>>we use this to select static dropdown (select options to define the static options the user will choose from this options )
+ datalist>>used to select predefined data from a json or static >>it responds to inout searc(when you search it flters the data to 
+ what you are searching)
+ }
+
+
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <fieldset>
+
+        <form action="">
+
+        <div>
+
+            <label for="fname">FirstName</label>
+            <input type="text" id="fname" name="fullname">
+        </div>
+
+        <div>
+            <label for="sname">SecondName</label>
+            <input type="text" id="sname" name="secondname">
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+         <div>
+            <label for="pssword">Password:</label>
+            <input type="password" id="pssword" name="password">
+        </div>
+
+         <div>
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date">
+        </div>
+
+         <div>
+            <button type="submit">Submit</button>
+        </div>
+     
+    </form>
+   
+  <div>
+ <label for="donate">Why Should we pick you: </label>
+ <br>
+    <textarea name="donation" id="donate"></textarea>
+  </div>
+   
+
+
+  <div>
+    <label for="Country">Which country do you come from </label>
+    <select name="country" id="country">
+        <option value=""></option>
+        <option value="Kenya">Kenya</option>
+        <option value="Uganda">Uganda</option>
+
+        <option value="Tanzania">Tanzania</option>
+
+        <option value="Ethiopia">Ethiopia</option>
+
+        <option value="Burundi">Burundi</option>
+
+        <option value="Rwanda">Rwanda</option>
+
+    </select>
+  </div>
+
+<!--   //datalist
+ -->    
+ <div>
+    <label for="browser">Choose a browser:</label>
+
+<input type="text" id="browser" list="browsers">
+
+<datalist id="browsers">
+    <option value="Google Chrome">
+    <option value="Mozilla Firefox">
+    <option value="Microsoft Edge">
+    <option value="Safari">
+    <option value="Opera">
+</datalist>
+        
+
+
+  </div>
+
+</fieldset>
+
+    
+
+
+
+</body>
+</html>

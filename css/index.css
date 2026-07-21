@@ -1,0 +1,305 @@
+/* what is css>>this refers to cascandng style sheet {
+    it is used for styling content on the web >>mostly 
+    html content 
+ css stlying goes stpe by step by tags {
+    every html tag that need styling has to have a selector 
+
+    css has various frameworks for styling {
+        a framework is a pre-equiped package that has 
+        classes for css ,>>all you sdo id import the stlyes 
+        an example of a framewrork is bootstrap and tailwind
+
+    }
+ }   
+
+ to link html to css we use three ways {
+    inline css where css is embedded in line with html 
+    tags as an attribute (style attribute)
+    internal via  the css style tag 
+    external via the .css file extension {recommended
+     version as it allows asynchronous execution }
+ }
+} */
+ h3{
+    color: yellow;
+ }
+/*  to link htmlto css we use selector >>this target each element 
+ a selector block has these features :
+ selector name{
+    property:value;
+ }
+ we have various selectors as follows {
+    universal selector {
+        this selector defined by the asteric is used to select everything in the 
+        webpage (*)
+
+    }
+ } */
+ *{
+    color: orangered;
+    font-size: 40px;
+    margin-bottom: 120px;
+    border: 2px solid black;
+    padding: 30px;
+
+ }
+
+/*  element selector >>this tag also called a tag selector 
+ is used to select a tag based on the tagname  */
+
+ h5{
+    background-color: green;
+ }
+
+/*  class selector>>this selector is used to select elements
+ that 
+ you wan to categories as one class or they are grouped 
+ together 
+ or you want to divide them 
+ a class can have multipe calss names seperated together via a 
+ space for 
+ different styling
+ syntax>>defined by the class attt=ribute in the html 
+ tag and then 
+ in css defined by the dot syntax then the classname */
+
+ .heading3{
+    background-color: magenta;
+    color: white;
+ }
+
+/*  id selctor >>this selector is for specific elemetns 
+ we use this using the hash syntax 
+ id selector can only be named once because
+  its unique eg >>payment buttons
+ */
+#heading5{
+    background-color: lightsalmon;
+    border-radius: 100%;
+    width: 10%;
+    padding: 140px;
+    text-align: center;
+    margin: 10px auto;
+
+}
+/* //assingment {
+    why css :cascanding ,specificity
+}
+/
+text properties>>this are properties that are used to define text on css
+they are many so we categories tham as follows { */
+
+/*    font properties{
+      font-style:;this ae used to define the style in which a font will tae (italic,straight)
+      color:;(this is used ot give color to font )based on the color protocols
+      font-family: ;used to describe the family of the fonts from google fonts 
+      font-size: ;used to define the font size with ,the measurement protocols
+      font-weight: ;>>used to define the boldness of font (range 100-900)
+   }
+   
+   alignment properties>>this properties are used to define the position of the text
+   text-align{
+      :left>>aligns text to the left
+      :right>>aligns text to the right
+      center>>aloigns text to the center
+      justify>>align text to left paragraph start position
+   }
+   measurement properties{
+      they are used to defint eh measurements of propertiues and values 
+  we use the follwoig ofr properties{
+   px(pixels)>>with a range from 0 -/> n-1{
+      10px 
+      the default pixel mesurement are 16px
+
+   }
+
+   rem/em>>measurement in relation to the root element(16px)
+   1 em :16px
+
+}
+`
+vh >>this is the relative dimension of the display: ; height 
+vw>>defines the dimensions of the relative width
+   }
+
+   color{
+      this properties allow us to define colors in backgrounds,text colors,and 
+      overalll ui colors 
+      we can define coors in the following ways {
+         RGB(RGBA)>RED,GREEN,BLUE>>WE HAVE A VAST NUMBER OF COLORS >256
+         COLOR PROEPERTY VALUE{
+            COLOR:NAME OF COLOR:
+         }
+         HEX>>THIS USES THE HEXAGONAL COLOR CODES >>A COMBINATION OF SPECIAL
+          CHARACTERS FORMING COLORS 
+   {#6da832}
+         HSL(HSLA)>>WHERE WE USE HUE ,SATURATION ,LUMINANCE TO DEFINE COLORS 
+      }
+
+   }
+
+
+   //box model >>{
+      literally evrything in html is a box structure (rectangular container )
+      from this we get the box model >>refers to how we defne the tags in html based on four aspects {
+         margin >>the space between borders is called margin and it spans in four directions {
+            margin-top: space between tags to the top 
+         margin-bottom: ; space between tags to the bottom
+         margin-left: space between tags to the left
+         margin-right: space between tags to the right
+         }
+         the shorthand nptation for defining marign in one line {
+            margin: top bottom left right ;
+         {
+            margin:10px 20px 30px 40px;
+         }
+         margin:10px 30px;>>one liner to position margin top/bottom,left/right
+         }
+
+
+         padding:the space between the content and the border inside the tag ;{
+            it has four dimensions namely{
+               padding-bottom: space to the botoom of content and border
+               padding-left:space to the left of content and border
+               padding-right:space to the right of content and border
+               padding-top:space to the top of content and border
+            }
+            one line for equal padding by stating{
+               padding:30px>>uniform padding across all sides 
+            }
+         }
+         border :this refers to the line that encloses a tag 
+         it has various properties as follows {
+            width:defined by pixel
+            color:defined by color 
+            nature :defined by how you want th eline to appear (dotted,underline ...)
+         }{
+            border radius>>this property allows one to curve the dimensions of a box into any shape {
+               from a box shape to circle ,triangle ,sphere 
+               with the following properties {
+                  border-top-right-radius
+                           border-bottom-right-radius
+                              border-top-left-radius
+
+                               border-bottom-left-radius
+
+
+               }
+            }
+         }
+         content: ;
+      }
+   }
+
+   DISPLAY PROPERTIES{
+      display prpoperties areused to control the strucutre of content
+       in what ordr they folow 
+      we use two properties to achieve this {
+         flex >>flexible containers
+         grid>>grid templates (rows,columns)
+         block 
+         inline
+      }
+
+      Display>>display refers to how e strucutre content and the direction it follows {
+  by default the display ois aways block 
+
+  but to create responsive and dynamic strucutres we have to be flexible hence
+   the other displays {
+
+  flex>>this type of display allows us to arrange elements in flexibe containers 
+  this are the properties of display flex{
+  display:flex;
+  flex-direction{
+  by default flex is in a row direction but we can change that to go in a column as follwos {
+  flx-direction:column;
+  to add to this the row and column can span in a reverse directly where 
+  the first lement can be the last element 
+  flex-direction:column-reverse;>>reverses the direction of column 
+  flex-direction:row-reverse>>reverses the row direction 
+
+
+  to render responsiveness in some gadgets we wrap items in a flexbox using
+   the flex-wrap property {
+  flex-wrap:wrap;
+  flex-wrap:no-wrap;
+  flex-wrap:wrap-reverse;
+
+  //assingment 
+  flex shrink 
+  flex-grow
+  justify-content
+
+
+  flex alignment {
+  we have used this properties in ur projects {
+  first of all we justify the content {
+       it can go in three ways {
+       space-between>>leaving a space in between two or more flex boxes havin them 
+   seperate on both ends 
+      space-evenly >>we have our flex elemetns distributed evenly leaving an equal gap
+       between 
+      themlselves
+      space-around>>>leaves an equal space around our flex elemets (the content and 
+      the border
+       }
+       align-items>>this was used to align our content to the desired to have them in 
+       a straight position 
+       {
+       center>>items t the center
+       flex-start>>we align items on the left side
+       flex-end??we align items to right side
+       baseline>>alifgn items to the bottom 
+}
+there are vrous properties used to control responsivenss and they include {
+flex-wrap{
+this is the wrap that encloses items in a container to make them dynamic inflow {
+once a container is shrinked or grown ,the items go with the motion}
+
+in here we have {
+flex warp:wrap;
+flex-wrap:no wrap;
+flex-wrap:wrap-reverse;
+}
+
+responsive design {
+
+to make sure that our applicitons are generally dynamic to various devices ,css has inbuilt methods to do that 
+via what we call media queries {
+
+this are break points that make sure we have a responsive design by changing the styles of the components 
+on various break points specified {
+the syntax of media quesries is given by 
+@media screen(max-width/min-width()){
+//css. code goes here 
+}
+one can navigate from desktop to mobile or you can start with mobile to desktop design {
+we play with display 
+}
+}
+animations {
+refers to changing frames of mation using various properties that allows us to induce the effect of motion 
+a frame >>sections combined together to from transitions that induce motion
+we use what we call @keyframes property to induce animations 
+
+natively there are two ways to use this {
+using the 
+from.....to keyword which limit the user 
+using percentge {
+0---100% which ofers more flexibility {
+at each percentile you can giuve a new propert)
+n/b>>the keyfram name should be the name of the animation {
+the same name used for keyframe should be usied in the css key valu property undr the
+ target component using the animation keyword
+
+ */
+
+@keyframes  slidein{
+   from{
+       background-color: red;
+   }
+
+   to{
+    background-color: yellow;
+   }
+}
