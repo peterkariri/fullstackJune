@@ -73,7 +73,7 @@
  id selector can only be named once because
   its unique eg >>payment buttons
  */
-#heading5{
+/* #heading5{
     background-color: lightsalmon;
     border-radius: 100%;
     width: 10%;
@@ -81,7 +81,7 @@
     text-align: center;
     margin: 10px auto;
 
-}
+} */
 /* //assingment {
     why css :cascanding ,specificity
 }
@@ -301,5 +301,33 @@ the same name used for keyframe should be usied in the css key valu property und
 
    to{
     background-color: yellow;
+   }
+}
+positions{
+   positions are a css property yhat contrls the dynamic where and when an element is goin to be in w ebpage {
+      we have variojs positions incss they include[
+         STATIC>>THIS IS THE DEFAULT POSITION OF HTML ELEMENTS IN A PAGE (FIXED UNLESS A MOTIN IS INDUCED>>SCROLL)
+         RELATIVE>>IN THIS POSITIONS ELEMENTS MOVE IN RELATION TO ITSELF AROUND THE BODY OR container;
+         ABSOLUTE>>THIS POSTION IS ONE THAT IS CONTROLLED BY A PARENT BEEN IN A POSITION RELATIVE {
+            THE CHILD IN A POSITION ABSOLUTE MOVES IN A DYNAMIC POSITON IN THE PARENT 
+         }
+         STICKY>>THIS IS THE POSITON THAT HAS BREAKPOINTS ,ITS FIXED AT SOME PLACES THEN
+          DISSAPEEARS AT SOME PLACES THEN APPEARS LATER 
+
+          FIXED>>THIS IS THE ONLY PERMANENT POSITION WHEN SET FOR ELEMENTS {
+            MOBILE MENUS ,DASHBOARD NAVIGATION
+          }
+      ]
+      HOW DO WE INTERACT WITH THIS POSTIONS {
+         WE USE FOUR DIRECTIONS TO DO SO {
+            left: YOU WAN TOT MOVE TO THE RIGHT WITH A SPECIFIED MEASUREMENT;
+            right: YOU WAN TOT MOVE TO THE LEFT WITH A SPECIFIED MEASUREMENT;
+            BOTTOM: YOU WAN TOT MOVE TO THE TOP WITH A SPECIFIED MEASUREMENT;
+           TOP: YOU WAN TOT MOVE TO THE BOTTOM WITH A SPECIFIED MEASUREMENT;
+
+
+
+         }
+      }
    }
 }
