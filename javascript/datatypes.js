@@ -235,3 +235,6 @@ NON PRIMITIVE DATA TYPES {
           let arrow=()=>{
 
           }
+//define a function to calcualte the area of a trapezium
+//define a function to output your fullname
+//define a function to output the even number from 1-20
