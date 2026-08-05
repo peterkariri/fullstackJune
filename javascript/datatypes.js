@@ -202,4 +202,36 @@ NON PRIMITIVE DATA TYPES {
 
 
                
-             //functions>>
+             //functions>>these referes to reusabel code blocks that compute a particuar task based on the logic implemented 
+             //the logic is given by control strucutres ,loops ,and other paramenters 
+
+             //we define functionin htre ways {
+             //functions carry what we refere to ass paramenters in brackets and this parameters are the ones that hold real user values 
+             //paramenters are just place holders for dynamic user data
+             //parameters depends on the number of arguments that exist to tell us how many parameters we need 
+             //a function neds to be called inorder to execute >>without calling a function you wont be using it 
+           // function declaration>>we give the function a name and before the name we instantitiate the function by the keyword 'function'
+           // to make a function giv e you a real production feedback we use the return keyword which return data to user 
+           //the return keyword is the final code line  in a function any word that comes after this is not executed 
+            function getSum(x,y){
+              //logi goes here
+                //console.log(x+y);
+                return x+y
+                
+            }
+            getSum(4,5) //arguments
+
+           // function expression>>this are functions declared but assigned a variable to be stored in 
+
+            let area=function getArea(num1,num2){
+                     console.log(0.5 * num1 *num2);
+                     
+            }
+            area(3,4)
+
+           // arrow function >>this is the modern way t define function >>is clean ,efficient and one line 
+          // it removes the word funcion and function name  and replaces it with an arrow and a greater than sign and assignnd to a variable for storage
+
+          let arrow=()=>{
+
+          }
