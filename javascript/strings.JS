@@ -40,7 +40,63 @@ let output=splitSentence[0].toUpperCase()
 
 console.log(output);
 
+//chartAt>>character at a specified index >>its a number (1..n-1)
+let name='peter Njuguna'
 
+let indexOfName=name.charAt("1")
+console.log(indexOfName);
+
+//indexOff(retunrs the index of a word,character in a stirng )
+
+//booloean ops >>they loop through the string to check for this elements 
+/* includes>>lopps through a stirng to search if a stirng has the sad words ,then returns 
+a boolean if T/F
+//startsWith>>used to check if a string starts with the specified characters/character 
+// and retuns a boolean 
+//endsWith
+
+
+slice
+substring 
+replace
+replaceAll
+trim(plus two)
+repeat
+
+
+ */
 
 //reverse
 //join
+
+let courseStatement ="I am studying Fullstack software development"
+
+let startWith=courseStatement.toLowerCase().startsWith('i')//method chaining 
+console.log(startWith)
+
+
+let endswith=courseStatement.endsWith('development')
+
+console.log(endswith);
+
+
+//includes >>IMPORTANT
+
+letSearch=courseStatement.includes('dev')
+console.log(letSearch);
+    
+
+//CHANGE STRINGSBY MAPPING A NEW STRING AND MAKING ALTERATION IN LENGTH AND DYNMICITY
+/* THEY DO SO BY SPECIFYING TH EINDEX {
+    START INDEX >>where truncation will begin 
+     THE END INDEX >>WHERE truncation will end 
+
+     the slice method also offers reverse slicing form the right to left (-index)
+     the substirng which does not accept negative slices >>incase of 
+     negative indexex it returns nothing
+
+} */
+
+     let SlicedString=courseStatement.slice(2,8)
+     console.log(SlicedString);
+     
