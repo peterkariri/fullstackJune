@@ -100,3 +100,12 @@ console.log(letSearch);
      let SlicedString=courseStatement.slice(2,8)
      console.log(SlicedString);
      
+     let wenz= "lets learn strings"
+     let wense=wenz.toUpperCase()
+     console.log(wense);
+    
+     let profile="my name is liz"
+     let profileeslice=profile.toUpperCase().slice(2,30).includes('LIZ')
+     console.log(profileeslice);
+     
+     
