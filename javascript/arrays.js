@@ -67,3 +67,8 @@ let names=persons.map((person)=>{
    return newOne 
 })
 console.log(names);
+
+let filter=persons.filter(person=>{
+     return person.score %2 ===0
+})
+console.log(filter);
