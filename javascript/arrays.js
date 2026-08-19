@@ -72,3 +72,8 @@ let filter=persons.filter(person=>{
      return person.score %2 ===0
 })
 console.log(filter);
+//find >>trizzah
+//replace>>velter
+//reverse>>liz
+//slice>>liz
+//splice>>wencellious
